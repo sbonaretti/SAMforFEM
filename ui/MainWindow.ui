@@ -1,0 +1,2239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1271</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox_31">
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QToolBox" name="toolBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>375</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="page_1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>375</width>
+             <height>617</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>IMAGE TOOL</string>
+           </attribute>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>330</y>
+              <width>351</width>
+              <height>251</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>STATISTICAL MODEL</string>
+            </property>
+            <widget class="QGroupBox" name="groupBox_15">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>100</y>
+               <width>331</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>validation</string>
+             </property>
+             <widget class="QPushButton" name="RecreateImageInstance">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>311</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>recreate instance</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_17">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>331</width>
+               <height>71</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>calculation</string>
+             </property>
+             <widget class="QRadioButton" name="ShapeImagePCA">
+              <property name="geometry">
+               <rect>
+                <x>11</x>
+                <y>21</y>
+                <width>83</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Shape PCA</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="CombinedImagePCA">
+              <property name="geometry">
+               <rect>
+                <x>217</x>
+                <y>21</y>
+                <width>103</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Combined PCA</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="IntensityImagePCA">
+              <property name="geometry">
+               <rect>
+                <x>114</x>
+                <y>21</y>
+                <width>97</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Intensity PCA</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="CalculateImagePCA">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>311</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>calculate</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_23">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>160</y>
+               <width>331</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>new instances</string>
+             </property>
+             <widget class="QSpinBox" name="NOfImageInstances">
+              <property name="geometry">
+               <rect>
+                <x>100</x>
+                <y>21</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="maximum">
+               <number>2000</number>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>12</x>
+                <y>21</y>
+                <width>80</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>n. of instances</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_14">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>21</y>
+                <width>66</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>n. of modes</string>
+              </property>
+             </widget>
+             <widget class="QSpinBox" name="NOfImageModes_2">
+              <property name="geometry">
+               <rect>
+                <x>270</x>
+                <y>21</y>
+                <width>51</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="maximum">
+               <number>200</number>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="CreateImageInstances">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>311</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>create instances</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>351</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>IMAGE PREPROCESSING</string>
+            </property>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>20</y>
+               <width>161</width>
+               <height>83</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QPushButton" name="MaskGreyLevel">
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>maskGreyLevel</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="MaskImage">
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>mask image</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="BinaryMaskDcm">
+                <property name="text">
+                 <string>binary mask image .dcm</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>151</width>
+               <height>83</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QPushButton" name="ImageResample">
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>resample</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="ItkToVtkToItk">
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>itk to vtk to itk</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="PseudoCalibration">
+                <property name="text">
+                 <string>pseudo calibration</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_8">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>120</y>
+              <width>351</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>CORRESPONDENCES - REGISTRATION</string>
+            </property>
+            <widget class="QPushButton" name="FindReference">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>331</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>find reference</string>
+             </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_18">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>140</y>
+               <width>331</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>validation</string>
+             </property>
+             <widget class="QPushButton" name="SurfaceComparisonImage">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>151</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>surface comparison</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="VolumeComparisonImage">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>20</y>
+                <width>151</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>volume comparison</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_19">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>331</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>warping</string>
+             </property>
+             <widget class="QPushButton" name="VfToDvf">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>141</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>vf to dvf</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="RecreateMoving">
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>50</y>
+                <width>141</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>recreate moving</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="VfToDvfInverted">
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>20</y>
+                <width>141</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>vf to dvf (-1)</string>
+              </property>
+             </widget>
+             <widget class="Line" name="line_2">
+              <property name="geometry">
+               <rect>
+                <x>156</x>
+                <y>20</y>
+                <width>20</width>
+                <height>51</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="RecreateReference">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>141</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>recreate reference</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>375</width>
+             <height>617</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>MESH TOOL</string>
+           </attribute>
+           <widget class="QGroupBox" name="groupBox_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>351</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>MESH CREATION</string>
+            </property>
+            <widget class="QGroupBox" name="groupBox_11">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>211</width>
+               <height>77</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>surface mesh</string>
+             </property>
+             <widget class="QPushButton" name="CreateMesh">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>47</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>create</string>
+              </property>
+             </widget>
+             <widget class="QDoubleSpinBox" name="Simplify">
+              <property name="geometry">
+               <rect>
+                <x>151</x>
+                <y>20</y>
+                <width>50</width>
+                <height>19</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.100000000000000</double>
+              </property>
+              <property name="value">
+               <double>0.400000000000000</double>
+              </property>
+             </widget>
+             <widget class="QSpinBox" name="Smooth">
+              <property name="geometry">
+               <rect>
+                <x>151</x>
+                <y>47</y>
+                <width>50</width>
+                <height>19</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="maximum">
+               <number>1000</number>
+              </property>
+              <property name="value">
+               <number>150</number>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label">
+              <property name="geometry">
+               <rect>
+                <x>105</x>
+                <y>47</y>
+                <width>47</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>smooth</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="LoadImageMesh">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>load</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_2">
+              <property name="geometry">
+               <rect>
+                <x>105</x>
+                <y>20</y>
+                <width>47</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>simplify</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_13">
+             <property name="geometry">
+              <rect>
+               <x>240</x>
+               <y>20</y>
+               <width>100</width>
+               <height>77</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>volume mesh</string>
+             </property>
+             <widget class="QPushButton" name="CreateVolumeMesh">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>47</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>create</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="LoadSurfaceMesh">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>load</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_26">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>100</y>
+               <width>331</width>
+               <height>53</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>volume mesh quality</string>
+             </property>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>11</x>
+                <y>21</y>
+                <width>311</width>
+                <height>25</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QPushButton" name="MeshJacobian">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>jacobian</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="MeshEdgeRatio">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>edge ratio</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="MeshAngle">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>min angle</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>170</y>
+              <width>351</width>
+              <height>131</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>CORRESPONDENCES - MESH MORPHER</string>
+            </property>
+            <widget class="QGroupBox" name="groupBox_12">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>331</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>preprocessing</string>
+             </property>
+             <widget class="QPushButton" name="CreateXml">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>create .xml</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="PickLandmarks">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>pick landmarks</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="CreateXmlFromFiles">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>.xml from files</string>
+              </property>
+             </widget>
+             <widget class="Line" name="line">
+              <property name="geometry">
+               <rect>
+                <x>206</x>
+                <y>20</y>
+                <width>20</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_27">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>101</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>morphing</string>
+             </property>
+             <widget class="QPushButton" name="RunMorpher">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>81</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>run morpher</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_14">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>70</y>
+               <width>211</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>validation</string>
+             </property>
+             <widget class="QPushButton" name="SurfaceValidation">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>surface</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="VolumeValidation">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>volume</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>310</y>
+              <width>351</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>STATISTICAL  MODEL</string>
+            </property>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>100</y>
+               <width>331</width>
+               <height>71</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>calculation</string>
+             </property>
+             <widget class="QPushButton" name="CalculateMeshPCA">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>311</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>calculate</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="ShapeMeshPCA">
+              <property name="geometry">
+               <rect>
+                <x>11</x>
+                <y>21</y>
+                <width>83</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Shape PCA</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="CombinedMeshPCA">
+              <property name="geometry">
+               <rect>
+                <x>217</x>
+                <y>21</y>
+                <width>103</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Combined PCA</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="IntensityMeshPCA">
+              <property name="geometry">
+               <rect>
+                <x>114</x>
+                <y>21</y>
+                <width>97</width>
+                <height>18</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Intensity PCA</string>
+              </property>
+             </widget>
+             <zorder>ShapeMeshPCA</zorder>
+             <zorder>CombinedMeshPCA</zorder>
+             <zorder>IntensityMeshPCA</zorder>
+             <zorder>CalculateMeshPCA</zorder>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_24">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>220</y>
+               <width>331</width>
+               <height>71</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>new instances</string>
+             </property>
+             <widget class="QLabel" name="label_12">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>17</y>
+                <width>80</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>n. of instances</string>
+              </property>
+             </widget>
+             <widget class="QSpinBox" name="NOfMeshInstances">
+              <property name="geometry">
+               <rect>
+                <x>100</x>
+                <y>17</y>
+                <width>50</width>
+                <height>19</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="maximum">
+               <number>1000</number>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="CreateMeshInstances">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>309</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>create instances</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_13">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>17</y>
+                <width>66</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>n. of modes</string>
+              </property>
+             </widget>
+             <widget class="QSpinBox" name="NOfMeshModes">
+              <property name="geometry">
+               <rect>
+                <x>270</x>
+                <y>17</y>
+                <width>51</width>
+                <height>19</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+              <property name="maximum">
+               <number>200</number>
+              </property>
+              <property name="singleStep">
+               <number>1</number>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_9">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>170</y>
+               <width>331</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>validation</string>
+             </property>
+             <widget class="QPushButton" name="RecreateMeshInstance">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>301</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>recreate instance</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_25">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>331</width>
+               <height>81</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>preprocessing</string>
+             </property>
+             <widget class="QPushButton" name="MeshAlignment">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>311</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>mesh alignment</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="ExtractCoordinatesAndIntensities">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>151</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>extract coords and ints</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="ExtractNodesAndElements">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>20</y>
+                <width>151</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI</family>
+               </font>
+              </property>
+              <property name="text">
+               <string>extract nodes and elems</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>375</width>
+             <height>617</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>FEM TOOL</string>
+           </attribute>
+           <widget class="QGroupBox" name="groupBox_16">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>351</width>
+              <height>151</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>MATERIAL  PROPERTIES</string>
+            </property>
+            <widget class="QPushButton" name="LoadMesh">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>load mesh</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="LoadImageAssigner">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>load image</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>54</y>
+               <width>121</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>assignment law:   E =</string>
+             </property>
+            </widget>
+            <widget class="QDoubleSpinBox" name="AssignmentLawFirst">
+             <property name="geometry">
+              <rect>
+               <x>134</x>
+               <y>54</y>
+               <width>61</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="decimals">
+              <number>3</number>
+             </property>
+             <property name="singleStep">
+              <double>0.001000000000000</double>
+             </property>
+             <property name="value">
+              <double>6.850000000000000</double>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>54</y>
+               <width>36</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>ρ     ^</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>218</x>
+               <y>63</y>
+               <width>21</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>app</string>
+             </property>
+            </widget>
+            <widget class="QDoubleSpinBox" name="AssignmentLawSecond">
+             <property name="geometry">
+              <rect>
+               <x>251</x>
+               <y>54</y>
+               <width>54</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="singleStep">
+              <double>0.010000000000000</double>
+             </property>
+             <property name="value">
+              <double>1.490000000000000</double>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="Assign">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>120</y>
+               <width>331</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>assign and save</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_3">
+             <property name="geometry">
+              <rect>
+               <x>199</x>
+               <y>61</y>
+               <width>16</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>*</string>
+             </property>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_20">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QRadioButton" name="AssignToNodes">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>8</y>
+                <width>56</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>nodes</string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="AssignToElements">
+              <property name="geometry">
+               <rect>
+                <x>80</x>
+                <y>8</y>
+                <width>79</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>elements</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_21">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>80</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <widget class="QRadioButton" name="AbaqusMatProp">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>8</y>
+                <width>65</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>abaqus </string>
+              </property>
+             </widget>
+             <widget class="QRadioButton" name="TxtMatProp">
+              <property name="geometry">
+               <rect>
+                <x>90</x>
+                <y>8</y>
+                <width>70</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>.txt</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>160</y>
+              <width>351</width>
+              <height>141</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>BOUNDARY CONDITIONS</string>
+            </property>
+            <widget class="QGroupBox" name="groupBox_29">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>80</y>
+               <width>331</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>load type</string>
+             </property>
+             <widget class="QPushButton" name="Falling">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>20</y>
+                <width>151</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>sideways fall</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="Walking">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>151</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>one leg stance</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_28">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>331</width>
+               <height>51</height>
+              </rect>
+             </property>
+             <property name="title">
+              <string>application points</string>
+             </property>
+             <widget class="Line" name="line_3">
+              <property name="geometry">
+               <rect>
+                <x>206</x>
+                <y>20</y>
+                <width>20</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="PickApplicationPoints">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>pick</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="SaveApplicationPoints">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>save</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="PropagateApplicationPoints">
+              <property name="geometry">
+               <rect>
+                <x>230</x>
+                <y>20</y>
+                <width>91</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>propagate</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_10">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>310</y>
+              <width>351</width>
+              <height>91</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>FINITE ELEMENT SIMULATION</string>
+            </property>
+            <widget class="QPushButton" name="RunSimulation">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>60</y>
+               <width>331</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>run simulation</string>
+             </property>
+            </widget>
+            <widget class="Line" name="line_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>44</y>
+               <width>331</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="CreateAbaqusInpFalling">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>abaqus .inp fall</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="CreateAbaqusInp">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>abaqus .inp stance</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_22">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>517</y>
+              <width>351</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>IMPLANT FITTING</string>
+            </property>
+            <widget class="QPushButton" name="LoadBoneMesh">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>load bone mesh</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="LoadImplantMesh">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>load implant mesh</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="ComputeAndSave">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>331</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>compute and save</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="Proximal">
+             <property name="geometry">
+              <rect>
+               <x>11</x>
+               <y>47</y>
+               <width>67</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>proximal</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="Diaphyseal">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>47</y>
+               <width>78</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>diaphyseal</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="Distal">
+             <property name="geometry">
+              <rect>
+               <x>270</x>
+               <y>47</y>
+               <width>50</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>distal</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QGroupBox" name="groupBox_30">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>410</y>
+              <width>351</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>POSTPROCESSING</string>
+            </property>
+            <widget class="QPushButton" name="ExtractNeckIntensities">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>161</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>extract neck intensities</string>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QVTKWidget" name="qvtkWidget"/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Rendering">
+    <property name="title">
+     <string>&amp;Rendering</string>
+    </property>
+    <widget class="QMenu" name="menuMesh">
+     <property name="title">
+      <string>Mesh</string>
+     </property>
+     <widget class="QMenu" name="menuSurface_mesh">
+      <property name="title">
+       <string>Surface Mesh</string>
+      </property>
+      <addaction name="RenderStl"/>
+      <addaction name="RenderSurfaceCdb"/>
+     </widget>
+     <widget class="QMenu" name="menuVolume_Mesh">
+      <property name="title">
+       <string>Volume Mesh</string>
+      </property>
+      <addaction name="RenderVolumeInpAbaqus"/>
+      <addaction name="RenderVolumeCdb"/>
+     </widget>
+     <addaction name="menuSurface_mesh"/>
+     <addaction name="menuVolume_Mesh"/>
+     <addaction name="RenderVtkPolyData"/>
+    </widget>
+    <widget class="QMenu" name="menuImage">
+     <property name="title">
+      <string>Image</string>
+     </property>
+     <addaction name="RenderMetafile"/>
+    </widget>
+    <widget class="QMenu" name="menuPoints_2">
+     <property name="title">
+      <string>Points</string>
+     </property>
+     <addaction name="RenderPointsXyz"/>
+     <addaction name="RenderPointsXyzWithColorbar"/>
+     <addaction name="RenderPointsXyzWithColorbarC"/>
+    </widget>
+    <widget class="QMenu" name="menuDifference">
+     <property name="title">
+      <string>Distance</string>
+     </property>
+     <widget class="QMenu" name="menuEuclidean">
+      <property name="title">
+       <string>Euclidean</string>
+      </property>
+      <addaction name="EuclideanDistanceImage"/>
+      <addaction name="EuclideanDistancePoints"/>
+     </widget>
+     <addaction name="menuEuclidean"/>
+    </widget>
+    <addaction name="menuImage"/>
+    <addaction name="menuMesh"/>
+    <addaction name="menuPoints_2"/>
+    <addaction name="RenderLine"/>
+    <addaction name="RenderOBB"/>
+    <addaction name="RenderCoordinateSystem"/>
+    <addaction name="separator"/>
+    <addaction name="menuDifference"/>
+    <addaction name="separator"/>
+    <addaction name="DrawLineStart"/>
+    <addaction name="DrawLineStop"/>
+    <addaction name="separator"/>
+    <addaction name="ResetView"/>
+   </widget>
+   <widget class="QMenu" name="menu_Change_format">
+    <property name="title">
+     <string>&amp;Change format</string>
+    </property>
+    <widget class="QMenu" name="menuImages">
+     <property name="title">
+      <string>Images</string>
+     </property>
+     <addaction name="DcmToMhd"/>
+     <addaction name="MhdToDcm"/>
+     <addaction name="MhdToHdr"/>
+    </widget>
+    <widget class="QMenu" name="menuMesh_2">
+     <property name="title">
+      <string>Mesh</string>
+     </property>
+     <widget class="QMenu" name="menuVolume_Mesh_2">
+      <property name="title">
+       <string>Volume Mesh</string>
+      </property>
+      <addaction name="AbaqusToCdb"/>
+      <addaction name="CdbToInpAbaqus"/>
+      <addaction name="MorpherVolumeCdbToVtk_2"/>
+     </widget>
+     <widget class="QMenu" name="menuSurfaceMesh">
+      <property name="title">
+       <string>Surface Mesh</string>
+      </property>
+      <addaction name="MorpherSurfaceCdbToStl_2"/>
+     </widget>
+     <addaction name="menuSurfaceMesh"/>
+     <addaction name="menuVolume_Mesh_2"/>
+    </widget>
+    <widget class="QMenu" name="menuPoints">
+     <property name="title">
+      <string>Points</string>
+     </property>
+     <addaction name="PointsStlToTxt"/>
+     <addaction name="PointsVtkToTxt"/>
+     <addaction name="PointsTxtMatrixToVector"/>
+    </widget>
+    <addaction name="menuImages"/>
+    <addaction name="menuMesh_2"/>
+    <addaction name="menuPoints"/>
+   </widget>
+   <addaction name="menu_Rendering"/>
+   <addaction name="menu_Change_format"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="DcmToMhd">
+   <property name="text">
+    <string>.dcm to .mhd</string>
+   </property>
+  </action>
+  <action name="MorpherVolumeCdbToVtk">
+   <property name="text">
+    <string>.cdb to .vtk</string>
+   </property>
+  </action>
+  <action name="PointsStlToTxt">
+   <property name="text">
+    <string>.stl to .txt</string>
+   </property>
+  </action>
+  <action name="MorpherVolumeCdbToVtk_2">
+   <property name="text">
+    <string>.cdb to .vtk</string>
+   </property>
+  </action>
+  <action name="MorpherSurfaceCdbToStl_2">
+   <property name="text">
+    <string>.cdb to.stl</string>
+   </property>
+  </action>
+  <action name="RenderStl">
+   <property name="text">
+    <string>.stl</string>
+   </property>
+  </action>
+  <action name="RenderVolumeCdb">
+   <property name="text">
+    <string>.cdb</string>
+   </property>
+  </action>
+  <action name="RenderMetafile">
+   <property name="text">
+    <string>metafile</string>
+   </property>
+  </action>
+  <action name="InpToCdb">
+   <property name="text">
+    <string>.inp(neutral) to .cdb</string>
+   </property>
+  </action>
+  <action name="RenderSurfaceCdb">
+   <property name="text">
+    <string>.cdb</string>
+   </property>
+  </action>
+  <action name="RenderVolumeVtk">
+   <property name="text">
+    <string>.vtk</string>
+   </property>
+  </action>
+  <action name="RenderSurfaceVtk">
+   <property name="text">
+    <string>.vtk</string>
+   </property>
+  </action>
+  <action name="PointsVtkToTxt">
+   <property name="text">
+    <string>.vtk to .txt</string>
+   </property>
+  </action>
+  <action name="MhdToHdr">
+   <property name="text">
+    <string>.mhd to .hdr</string>
+   </property>
+  </action>
+  <action name="CdbToInpAbaqus">
+   <property name="text">
+    <string>.cdb to .inp</string>
+   </property>
+  </action>
+  <action name="RenderVolumeInpAbaqus">
+   <property name="text">
+    <string>.inp</string>
+   </property>
+  </action>
+  <action name="PointsTxtMatrixToVector">
+   <property name="text">
+    <string>.txt (Nx3) to .txt (3Nx1)</string>
+   </property>
+  </action>
+  <action name="ResetView">
+   <property name="text">
+    <string>Reset view</string>
+   </property>
+  </action>
+  <action name="RenderCoordinateSystem">
+   <property name="text">
+    <string>Coordinate System</string>
+   </property>
+  </action>
+  <action name="MhdToDcm">
+   <property name="text">
+    <string>.mhd to .dcm</string>
+   </property>
+  </action>
+  <action name="AbaqusToCdb">
+   <property name="text">
+    <string>.inp to .cdb</string>
+   </property>
+  </action>
+  <action name="RenderVtkPolyData">
+   <property name="text">
+    <string>VtkPolyData</string>
+   </property>
+  </action>
+  <action name="RenderOBB">
+   <property name="text">
+    <string>OBB</string>
+   </property>
+  </action>
+  <action name="RenderPointsXyz">
+   <property name="text">
+    <string>x,y,z</string>
+   </property>
+  </action>
+  <action name="RenderPointsXyzWithColorbar">
+   <property name="text">
+    <string>x,y,z with colorbar B/W</string>
+   </property>
+  </action>
+  <action name="DistancePoints">
+   <property name="text">
+    <string>Points</string>
+   </property>
+  </action>
+  <action name="EuclideanDistanceImage">
+   <property name="text">
+    <string>Images</string>
+   </property>
+  </action>
+  <action name="EuclideanDistancePoints">
+   <property name="text">
+    <string>Points</string>
+   </property>
+  </action>
+  <action name="RenderPointsXyzWithColorbarC">
+   <property name="text">
+    <string>x,y,z with colorbar C</string>
+   </property>
+  </action>
+  <action name="DrawLineStart">
+   <property name="text">
+    <string>Draw line start</string>
+   </property>
+  </action>
+  <action name="DrawLineStop">
+   <property name="text">
+    <string>Draw line stop</string>
+   </property>
+  </action>
+  <action name="RenderLine">
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>QVTKWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
